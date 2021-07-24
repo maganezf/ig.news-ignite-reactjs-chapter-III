@@ -14,7 +14,8 @@ export default class MyDocument extends Document {
           <meta charSet="UTF-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="viewport-fit=cover" />
-          <meta name="title" content="Ig.News" />
+
+          <link rel="shortcut icon" href="/favicon.png" type="image/png" />
         </Head>
 
         <body>
