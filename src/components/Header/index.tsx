@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import logoImg from '../../../images/logo.svg';
+import logoImg from '../../../public/logo.svg';
 
 import { SignInButton } from '../SignInButton';
 

@@ -18,8 +18,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/pages/components/Header/export default Header;",
-    "src/pages/components/SignInButton/import styles from './styles.module.scss';"
+    "src/components/Header/export default Header;",
+    "src/components/SignInButton/import styles from './styles.module.scss';"
   ],
   "exclude": ["node_modules"]
 }
