@@ -6,7 +6,7 @@ import avatarImg from '../../public/avatar.svg';
 import { SubscribeButton } from '../components/SubscribeButton';
 
 import styles from '../../styles/pages/home.module.scss';
-import { stripe } from '../services/api';
+import { stripe } from '../services/stripe';
 
 interface HomeProps {
   product: {
