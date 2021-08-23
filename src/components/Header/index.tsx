@@ -1,6 +1,9 @@
 import Image from 'next/image';
+import { useRouter } from 'next/router';
+
 import logoImg from '../../../public/logo.svg';
 
+import { ActiveLink } from '../ActiveLink';
 import { SignInButton } from '../SignInButton';
 
 import styles from './styles.module.scss';
@@ -12,10 +15,13 @@ export const Header = () => {
         <Image src={logoImg} alt="ig.news" />
 
         <nav>
-          <a className={styles.active} href="##">
-            Home
-          </a>
-          <a href="##">Posts</a>
+          <ActiveLink activeClassName={styles.active} href="/">
+            <a>Home</a>
+          </ActiveLink>
+
+          <ActiveLink activeClassName={styles.active} href="/posts" prefetch>
+            <a>Posts</a>
+          </ActiveLink>
         </nav>
 
         <SignInButton />
