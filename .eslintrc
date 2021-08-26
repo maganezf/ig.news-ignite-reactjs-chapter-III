@@ -2,6 +2,6 @@
   "extends": ["next", "next/core-web-vitals"],
 
   "rules": {
-    "import/prefer-default-export": "on"
+    "import/prefer-default-export": "off"
   }
 }

@@ -2,7 +2,7 @@ import { GetServerSideProps } from 'next';
 import Head from 'next/head';
 import { getSession } from 'next-auth/client';
 import { RichText } from 'prismic-dom';
-import { getPrismicClient } from '../../services/prismic';
+import { getPrismicClient } from 'services/prismic';
 
 import styles from './post.module.scss';
 
@@ -43,8 +43,6 @@ export const getServerSideProps: GetServerSideProps = async ({
   const session = await getSession({ req });
 
   const { slug }: any = params;
-
-  console.log('session: ', session);
 
   if (!session?.activeSubscription) {
     return {

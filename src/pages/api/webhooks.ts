@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import { Readable } from 'stream';
 import Stripe from 'stripe';
-import { stripe } from '../../services/stripe';
+import { stripe } from 'services/stripe';
 import { saveSubscription } from './_lib/manageSubscription';
 
 async function buffer(readable: Readable) {
@@ -26,6 +26,7 @@ const relevantEvents = new Set([
   'customer.subscription.deleted',
 ]);
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method === 'POST') {
     const buf = await buffer(req);
