@@ -10,7 +10,7 @@ import { stripe } from '../services/stripe';
 
 interface HomeProps {
   product: {
-    priceId: 'string';
+    priceId: string;
     amount: number;
   };
 }
